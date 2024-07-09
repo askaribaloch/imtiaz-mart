@@ -20,4 +20,4 @@ COPY . /app
 EXPOSE 8000
 
 # Run the FastAPI application with uvicorn
-CMD ["poetry", "run", "uvicorn", "imtiaz_mart.main:app", "--host", "127.0.0.1", "--port", "8000"]
+CMD ["poetry", "run", "uvicorn", "imtiaz_mart.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
